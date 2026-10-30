@@ -366,6 +366,13 @@ footer .sig{line-height:1.1}
 .topnav ul a,.menu-btn{font-size:14px;font-weight:400}
 .count b,.flow b,.venue-card .where h3,.acc code,.driver .num,.hero .when b{font-variation-settings:normal}
 .hero h1{font-size:clamp(60px,8.6vw,124px);line-height:.95}
+
+/* smooth strip: transform-driven track, reserved image widths */
+.strip .reel{overflow:hidden;padding-inline:0;touch-action:pan-y;cursor:grab}
+.strip .reel.drag{cursor:grabbing}
+.strip .track{display:flex;gap:10px;width:max-content;will-change:transform;transform:translate3d(0,0,0)}
+.strip figure{flex:0 0 auto;margin:0;height:clamp(220px,30vw,360px);border-radius:4px;overflow:hidden;background:var(--bg2)}
+.strip img{height:100%;width:auto;display:block;user-select:none;-webkit-user-drag:none;pointer-events:none}
 </style>
 <nav class="topnav" aria-label="Secções">
   <div class="in">
@@ -398,7 +405,7 @@ footer .sig{line-height:1.1}
   </div>
   <div class="strip" aria-label="Fotografias">
     <button class="arrow l" id="stripL" type="button" aria-label="Fotografias anteriores">❮</button>
-    <div class="reel" id="reel"><figure data-zoom><img src="fotos/praia-2.jpg" alt="Constança e Diogo à beira-mar, abraçados" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/africa-do-sul-lions-head.jpg" alt="Constança e Diogo no alto de uma montanha sobre o mar" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/casamento-hera.jpg" alt="Constança e Diogo junto a uma parede de hera" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/pedido-esplanada.jpg" alt="Constança mostra o anel numa esplanada" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/vestido-rosa.jpg" alt="Constança e Diogo ao fim da tarde, com uma lagoa atrás" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/riscas-1.jpg" alt="Constança e Diogo num terraço com o mar atrás" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/lisboa-tejo.jpg" alt="Jantar à beira do Tejo com a ponte 25 de Abril atrás" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/pedido-praia.jpg" alt="Constança mostra o anel de noivado, na areia" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/tailandia-railay.jpg" alt="Constança e Diogo numa praia com rochedos calcários" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/pelicula-madeira.jpg" alt="Constança e Diogo com montanhas atrás, em película" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/camboja-templo.jpg" alt="Constança e Diogo em frente a um templo de pedra" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/casamento-vestido-cores.jpg" alt="Constança e Diogo num casamento, ela com vestido colorido" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/rocha-vermelha.jpg" alt="Selfie numa rocha vermelha junto ao mar" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/banguecoque.jpg" alt="Constança e Diogo num terraço com a cidade iluminada" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/serra-outono.jpg" alt="Constança e Diogo num prado com árvores de outono e montanhas" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/africa-do-sul-por-do-sol.jpg" alt="Constança e Diogo ao pôr do sol sobre o mar" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/casamento-lago.jpg" alt="Constança e Diogo junto a um lago, vestidos para um casamento" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/praia-riso.jpg" alt="Constança e Diogo a rir à beira-mar" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/tailandia-elefante.jpg" alt="Constança e Diogo com um elefante" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/campismo.jpg" alt="Selfie à porta de uma tenda" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/nova-iorque-ponte.jpg" alt="Constança e Diogo com a ponte de Brooklyn atrás" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/casamento-terraco.jpg" alt="Constança e Diogo num terraço, num casamento" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/costa-rochas.jpg" alt="Selfie numa praia com rochas" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/camboja-selfie.jpg" alt="Selfie de Constança e Diogo junto a um templo antigo" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/pelicula-festa.jpg" alt="Constança e Diogo numa festa, em fotografia de película" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/africa-do-sul-bar.jpg" alt="Selfie numa esplanada de praia" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/casamento-riso.jpg" alt="Constança e Diogo a rir num casamento" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/praia-falesia.jpg" alt="Selfie numa praia junto à falésia" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/nova-iorque-yankees.jpg" alt="Selfie num estádio de basebol" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/brinde-por-do-sol.jpg" alt="Brinde com espumante ao pôr do sol" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/noite-esplanada.jpg" alt="Constança e Diogo numa esplanada à noite" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/tailandia-palmeiras.jpg" alt="Constança e Diogo entre palmeiras" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/abraco-praia.jpg" alt="Constança e Diogo abraçados numa praia com rochas" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/africa-do-sul-pringle.jpg" alt="Brinde numa esplanada" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/noite-flores.jpg" alt="Abraço numa festa à noite, com um ramo de flores" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/nova-iorque-por-do-sol.jpg" alt="Constança e Diogo num terraço ao pôr do sol" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/festival.jpg" alt="Constança e Diogo num festival à noite" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/praia-sentados.jpg" alt="Constança e Diogo sentados na areia" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/pedido-noite.jpg" alt="Constança mostra o anel de noivado, à noite" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/madeira.jpg" alt="Selfie de Constança e Diogo com montanhas atrás" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/nova-iorque-terraco.jpg" alt="Constança e Diogo num terraço ao fim da tarde" decoding="async" loading="lazy"></figure><figure data-zoom><img src="fotos/praia-1.jpg" alt="Constança e Diogo à beira-mar" decoding="async" loading="lazy"></figure></div>
+    <div class="reel" id="reel"><div class="track" id="track"><figure data-zoom><img data-src="fotos/praia-2.jpg" alt="Constança e Diogo à beira-mar, abraçados" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/africa-do-sul-lions-head.jpg" alt="Constança e Diogo no alto de uma montanha sobre o mar" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/casamento-hera.jpg" alt="Constança e Diogo junto a uma parede de hera" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/pedido-esplanada.jpg" alt="Constança mostra o anel numa esplanada" width="1400" height="1050" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/vestido-rosa.jpg" alt="Constança e Diogo ao fim da tarde, com uma lagoa atrás" width="1400" height="1050" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/riscas-1.jpg" alt="Constança e Diogo num terraço com o mar atrás" width="1400" height="1050" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/lisboa-tejo.jpg" alt="Jantar à beira do Tejo com a ponte 25 de Abril atrás" width="1400" height="1050" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/pedido-praia.jpg" alt="Constança mostra o anel de noivado, na areia" width="1051" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/tailandia-railay.jpg" alt="Constança e Diogo numa praia com rochedos calcários" width="1049" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/pelicula-madeira.jpg" alt="Constança e Diogo com montanhas atrás, em película" width="1400" height="973" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/camboja-templo.jpg" alt="Constança e Diogo em frente a um templo de pedra" width="1052" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/casamento-vestido-cores.jpg" alt="Constança e Diogo num casamento, ela com vestido colorido" width="933" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/rocha-vermelha.jpg" alt="Selfie numa rocha vermelha junto ao mar" width="1400" height="1050" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/banguecoque.jpg" alt="Constança e Diogo num terraço com a cidade iluminada" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/serra-outono.jpg" alt="Constança e Diogo num prado com árvores de outono e montanhas" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/africa-do-sul-por-do-sol.jpg" alt="Constança e Diogo ao pôr do sol sobre o mar" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/casamento-lago.jpg" alt="Constança e Diogo junto a um lago, vestidos para um casamento" width="1400" height="933" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/praia-riso.jpg" alt="Constança e Diogo a rir à beira-mar" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/tailandia-elefante.jpg" alt="Constança e Diogo com um elefante" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/campismo.jpg" alt="Selfie à porta de uma tenda" width="1400" height="1050" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/nova-iorque-ponte.jpg" alt="Constança e Diogo com a ponte de Brooklyn atrás" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/costa-rochas.jpg" alt="Selfie numa praia com rochas" width="1400" height="1050" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/camboja-selfie.jpg" alt="Selfie de Constança e Diogo junto a um templo antigo" width="1400" height="1212" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/pelicula-festa.jpg" alt="Constança e Diogo numa festa, em fotografia de película" width="1400" height="933" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/africa-do-sul-bar.jpg" alt="Selfie numa esplanada de praia" width="1400" height="1050" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/casamento-riso.jpg" alt="Constança e Diogo a rir num casamento" width="1400" height="933" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/praia-falesia.jpg" alt="Selfie numa praia junto à falésia" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/nova-iorque-yankees.jpg" alt="Selfie num estádio de basebol" width="1400" height="1050" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/brinde-por-do-sol.jpg" alt="Brinde com espumante ao pôr do sol" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/noite-esplanada.jpg" alt="Constança e Diogo numa esplanada à noite" width="1400" height="1050" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/tailandia-palmeiras.jpg" alt="Constança e Diogo entre palmeiras" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/abraco-praia.jpg" alt="Constança e Diogo abraçados numa praia com rochas" width="1400" height="933" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/africa-do-sul-pringle.jpg" alt="Brinde numa esplanada" width="1400" height="787" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/noite-flores.jpg" alt="Abraço numa festa à noite, com um ramo de flores" width="1400" height="933" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/nova-iorque-por-do-sol.jpg" alt="Constança e Diogo num terraço ao pôr do sol" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/festival.jpg" alt="Constança e Diogo num festival à noite" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/praia-sentados.jpg" alt="Constança e Diogo sentados na areia" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/pedido-noite.jpg" alt="Constança mostra o anel de noivado, à noite" width="1049" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/madeira.jpg" alt="Selfie de Constança e Diogo com montanhas atrás" width="1400" height="1050" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/nova-iorque-terraco.jpg" alt="Constança e Diogo num terraço ao fim da tarde" width="1050" height="1400" decoding="async" draggable="false"></figure><figure data-zoom><img data-src="fotos/praia-1.jpg" alt="Constança e Diogo à beira-mar" width="1050" height="1400" decoding="async" draggable="false"></figure></div></div>
     <button class="arrow r" id="stripR" type="button" aria-label="Fotografias seguintes">❯</button>
   </div>
 
@@ -519,43 +526,70 @@ footer .sig{line-height:1.1}
   });
 
 
-  // photo strip: drifts on its own, pauses on hover/touch, arrows on hover
-  const reel = $("reel");
-  if(reel){
-    const figs = [...reel.children];
-    figs.forEach(f => { const c = f.cloneNode(true); c.removeAttribute("data-zoom"); c.setAttribute("aria-hidden","true"); c.removeAttribute("tabindex"); reel.appendChild(c); });
-    let paused = false, last = 0, carry = 0;
+
+  // photo strip: continuous drift (transform, sub-pixel), drag/swipe, hover arrows, lazy images
+  const reel = $("reel"), track = $("track");
+  if(reel && track){
+    [...track.children].forEach(f => { const c = f.cloneNode(true); c.removeAttribute("data-zoom"); c.setAttribute("aria-hidden","true"); track.appendChild(c); });
+    // a photo missing from the folder disappears (with its copy) instead of leaving a gap
+    const drop = img => { const src = img.dataset.src || img.getAttribute("src"); track.querySelectorAll("img").forEach(o => { if((o.dataset.src || o.getAttribute("src")) === src) o.closest("figure").remove(); }); };
+    const load = img => { if(img.dataset.src){ img.onerror = () => drop(img); img.src = img.dataset.src; img.removeAttribute("data-src"); } };
+    const imgs = [...track.querySelectorAll("img[data-src]")];
+    if("IntersectionObserver" in window){
+      const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ load(e.target); io.unobserve(e.target); } }), {root:reel, rootMargin:"0px 1600px"});
+      imgs.forEach(i => io.observe(i));
+    } else imgs.forEach(load);
     const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const half = () => reel.scrollWidth / 2;
-    function step(t){
-      if(!last) last = t; const dt = t - last; last = t;
-      if(!paused && !reduce){ carry += dt * 0.04; const px = Math.floor(carry); if(px){ reel.scrollLeft += px; carry -= px; } }
-      if(reel.scrollLeft >= half()) reel.scrollLeft -= half();
-      if(reel.scrollLeft <= 0 && paused) {}
-      requestAnimationFrame(step);
+    const SPEED = 38; // px per second
+    let pos = 0, last = 0, hover = false, dragging = false, anim = null, resumeAt = 0;
+    const half = () => track.scrollWidth / 2;
+    const wrap = () => { const h = half(); if(h > 0) pos = ((pos % h) + h) % h; };
+    function frame(t){
+      const dt = last ? Math.min(t - last, 64) : 0; last = t;
+      if(anim){
+        const k = Math.min(1, (t - anim.t0) / 600), e = 1 - Math.pow(1 - k, 3);
+        pos = anim.from + (anim.to - anim.from) * e;
+        if(k >= 1) anim = null;
+      } else if(!hover && !dragging && !reduce && t > resumeAt){
+        pos += SPEED * dt / 1000;
+      }
+      wrap();
+      track.style.transform = "translate3d(" + (-pos).toFixed(2) + "px,0,0)";
+      requestAnimationFrame(frame);
     }
-    requestAnimationFrame(step);
+    requestAnimationFrame(frame);
     const strip = reel.parentElement;
-    strip.addEventListener("mouseenter", () => paused = true);
-    strip.addEventListener("mouseleave", () => paused = false);
-    reel.addEventListener("touchstart", () => paused = true, {passive:true});
-    reel.addEventListener("touchend", () => setTimeout(() => paused = false, 2500), {passive:true});
-    const by = () => Math.round(reel.clientWidth * 0.6);
-    $("stripL").addEventListener("click", () => { if(reel.scrollLeft < by()) reel.scrollLeft += half(); reel.scrollBy({left:-by(), behavior:"smooth"}); });
-    $("stripR").addEventListener("click", () => reel.scrollBy({left: by(), behavior:"smooth"}));
+    strip.addEventListener("mouseenter", () => hover = true);
+    strip.addEventListener("mouseleave", () => hover = false);
+    const nudge = dir => { anim = {from: pos, to: pos + dir * Math.round(reel.clientWidth * 0.6), t0: performance.now()}; };
+    $("stripL").addEventListener("click", () => nudge(-1));
+    $("stripR").addEventListener("click", () => nudge(1));
+    // drag / swipe
+    let sx = 0, sp = 0, moved = false;
+    reel.addEventListener("pointerdown", e => { dragging = true; moved = false; anim = null; sx = e.clientX; sp = pos; reel.classList.add("drag"); reel.setPointerCapture(e.pointerId); });
+    reel.addEventListener("pointermove", e => { if(!dragging) return; const dx = e.clientX - sx; if(Math.abs(dx) > 4) moved = true; pos = sp - dx; });
+    const end = () => { if(!dragging) return; dragging = false; reel.classList.remove("drag"); resumeAt = performance.now() + 2500; };
+    reel.addEventListener("pointerup", end); reel.addEventListener("pointercancel", end);
+    // a tap opens the photo; a drag does not
+    reel.addEventListener("click", e => {
+      if(moved){ e.preventDefault(); e.stopPropagation(); return; }
+      const r = reel.getBoundingClientRect();
+      const fig = [...track.children].find(f => { const b = f.getBoundingClientRect(); return e.clientX >= b.left && e.clientX <= b.right && e.clientY >= b.top && e.clientY <= b.bottom; });
+      if(fig){ const n = track.children.length / 2, i = [...track.children].indexOf(fig) % n; track.children[i].click(); }
+    }, true);
   }
   // lightbox
   const zs = [...document.querySelectorAll("[data-zoom]")], lb = $("lb"), li = $("lbImg"); let zi = 0;
-  const openLb = i => { zi = (i + zs.length) % zs.length; const im = zs[zi].querySelector("img") || zs[zi]; li.src = im.currentSrc || im.src; li.alt = im.alt; lb.hidden = false; document.body.style.overflow="hidden"; $("lbX").focus(); };
+  const openLb = (i, d) => { zi = (i + zs.length) % zs.length; if(!zs[zi].isConnected){ let k = 0; while(!zs[zi].isConnected && k++ < zs.length) zi = (zi + (d || 1) + zs.length) % zs.length; } const im = zs[zi].querySelector("img") || zs[zi]; li.src = im.currentSrc || im.src || im.dataset.src; li.alt = im.alt; lb.hidden = false; document.body.style.overflow="hidden"; $("lbX").focus(); };
   const closeLb = () => { lb.hidden = true; document.body.style.overflow=""; };
   zs.forEach((z,i) => { z.tabIndex = 0; z.addEventListener("click", () => openLb(i)); z.addEventListener("keydown", e => { if(e.key==="Enter"||e.key===" "){ e.preventDefault(); openLb(i);} }); });
   $("lbX").addEventListener("click", closeLb);
-  $("lbP").addEventListener("click", () => openLb(zi-1));
+  $("lbP").addEventListener("click", () => openLb(zi-1, -1));
   $("lbN").addEventListener("click", () => openLb(zi+1));
   lb.addEventListener("click", e => { if(e.target === lb) closeLb(); });
   document.addEventListener("keydown", e => {
     if(e.key === "Escape"){ if(!lb.hidden) closeLb(); if(!ov.hidden) setMenu(false); }
-    if(!lb.hidden && e.key === "ArrowLeft") openLb(zi-1);
+    if(!lb.hidden && e.key === "ArrowLeft") openLb(zi-1, -1);
     if(!lb.hidden && e.key === "ArrowRight") openLb(zi+1);
   });
 
